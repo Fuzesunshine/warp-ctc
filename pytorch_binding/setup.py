@@ -16,7 +16,7 @@ warp_ctc_path = "../build"
 #     print("Torch was not built with CUDA support, not building warp-ctc GPU extensions.")
 #     enable_gpu = False
 
-enable_gpe = True
+enable_gpu = True
 
 if platform.system() == 'Darwin':
     lib_ext = ".dylib"
