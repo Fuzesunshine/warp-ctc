@@ -10,11 +10,13 @@ import torch
 extra_compile_args = ['-std=c++11', '-fPIC']
 warp_ctc_path = "../build"
 
-if torch.cuda.is_available():
-    enable_gpu = True
-else:
-    print("Torch was not built with CUDA support, not building warp-ctc GPU extensions.")
-    enable_gpu = False
+# if torch.cuda.is_available():
+#     enable_gpu = True
+# else:
+#     print("Torch was not built with CUDA support, not building warp-ctc GPU extensions.")
+#     enable_gpu = False
+
+enable_gpe = True
 
 if platform.system() == 'Darwin':
     lib_ext = ".dylib"
